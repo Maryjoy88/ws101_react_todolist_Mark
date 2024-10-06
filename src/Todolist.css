@@ -1,0 +1,94 @@
+/* Main container for centering and padding */
+
+.todo-list {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #15813c;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(1, 69, 34, 0.1);
+    background-color: #C0EBA6;
+    background-blend-mode: darken;
+}
+
+.todo-list h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.todo-list input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #86D293;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.todo-list button {
+    padding: 10px 10px;
+    background-color: #4CAF50; 
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-list button:hover {
+    background-color: #45a049; 
+}
+
+.todo-list ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 20px;
+    background-color: #C0EBA6;
+}
+
+.todo-list li {
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+    border-bottom: 1px solid #86D293; 
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.todo-list li:last-child {
+    border-bottom: none; 
+}
+
+.todo-list li.completed span {
+    text-decoration: line-through; 
+    color: #181C14; 
+}
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style for delete button in list items */
+.todo-list li button {
+    background-color: #f44336; 
+    color: black;
+    border: none;
+    padding: 10px 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    margin-left: 250px;
+    position: fixed;
+}
+
+.todo-list li button:hover {
+    background-color: #d32f2f; 
+}
+
+.todo-list li input[type="text"] {
+    background-color: #181C14;
+}
